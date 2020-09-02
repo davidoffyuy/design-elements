@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/handlebars/handlebars.runtime-v4.3.1.js"></script>
+    <script src="js/templates/templates.js"></script>
+    <link rel="stylesheet" href="js/bootstrap/bootstrap.min.css" />
+    <title>David's Design Elements</title>
+  </head>
+  <body>
+    <header id='main_header'>
+      <!-- insert header template -->
+    </header>
+
+    <main class="p-3">
+      <h1>David's Design Elements</h1>
+      <p>
+        This is just a website to document the examples of image sliders that can be created using HTML, CSS, and
+        javascript. Click on the examples above to see the various sliders that have been created
+      </p>
+    </main>
+
+    <script>
+      const loadTemplates = () => {
+        const navTopTemplate = Handlebars.templates.navigation_top;
+        document.getElementById('main_header').innerHTML = navTopTemplate({
+          navHome: true
+        });
+      };
+      
+      window.addEventListener('DOMContentLoaded', (event) => {
+        loadTemplates();
+      });
+    </script>
+  </body>
+</html>

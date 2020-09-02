@@ -1,0 +1,6 @@
+COMPILE TOP NAVIGATION BAR
+npx handlebars -m js/templates/ -f public/js/templates/templates.js
+
+COMPILE & WATCH SCSS
+sass --no-source-map --watch scss/fading-slider-class.scss public/css/fading-slider-class.css
+sass --no-source-map --watch scss/scroll-shadow.scss public/css/scroll-shadow.css

@@ -1,0 +1,70 @@
+@mixin user-select($property) {
+  -webkit-user-select: $property;  /* Chrome all / Safari all */
+  -moz-user-select: $property;     /* Firefox all */
+  -ms-user-select: $property;      /* IE 10+ */
+  user-select: $property; 
+}
+
+$transition-speed: 200ms;
+
+.basic-slider {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  
+  > img {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0ms linear $transition-speed, opacity $transition-speed linear 0ms;
+
+    &.fit {
+      object-fit: contain;
+    }
+
+    &.show {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: visibility 0ms linear 0ms, opacity $transition-speed linear 0ms !important;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    font-size: 5em;
+    background-color: #bebebe;
+    border-radius: 8px;
+    font-family: monospace;
+    line-height: 1;
+    padding: 0rem 0.5rem;
+    opacity: 0.4;
+    @include user-select(none);
+
+    &:hover {
+      opacity: 1;
+    }
+  
+    &--hidden {
+      display: none !important;
+    }
+  
+    &--left {
+      left: 0px;
+    }
+    &--right {
+      right: 0px;
+    }
+  }
+}

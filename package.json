@@ -1,0 +1,23 @@
+{
+  "name": "designelements",
+  "version": "1.0.0",
+  "description": "David's personal design playground",
+  "main": "public/index.html",
+  "scripts": {
+    "hbs": "handlebars -m js/templates/ -f public/js/templates/templates.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidoffyuy/design-elements.git"
+  },
+  "author": "David Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidoffyuy/design-elements/issues"
+  },
+  "homepage": "https://github.com/davidoffyuy/design-elements#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "sass": "^1.26.10"
+  }
+}
