@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -7,13 +8,21 @@ body, html {
   box-sizing: border-box;
 }
 
-#lorem_main {
-  font-size: 2em;
-  width: 90%;
-  margin: auto;
+#scroll_val {
+  position: fixed;
+  bottom: 0.1rem;
+  left: 0.2rem;
+  z-index: 100;
 }
 
-#lorem_container {
+#lorem_main {
+  font-size: 2em;
+  width: 80%;
+  margin: auto;
+  line-height: 200%;
+}
+
+#shadow_container {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -22,12 +31,16 @@ body, html {
   border: 1px solid red;
   height: 100vh;
   z-index: -1;
+  margin: 0;
 }
 
-#lorem_text {
+#shadow_text {
   width: 200%;
-  font-size: 8rem;
-  color: #f2f2f2;
+  font-size: 10rem;
+  color: #ededed;
   font-weight: bold;
   border: 1px solid blue;
+  transform: translateY(-20px);
+  margin: 0;
+  padding: 0;
 }
