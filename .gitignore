@@ -1,3 +1,7 @@
+#DAVID
+public/stylesheets/compiled/
+public/js/templates/
+
 # Logs
 logs
 *.log
