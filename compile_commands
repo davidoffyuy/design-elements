@@ -1,5 +1,5 @@
 COMPILE TOP NAVIGATION BAR
-npx handlebars -m js/templates/ -f public/js/templates/templates.js
+npx handlebars -m templates/ -f public/js/templates/templates.js
 
 COMPILE & WATCH SCSS
 sass --no-source-map --watch scss/fading-slider-class.scss public/stylesheets/compiled/fading-slider-class.css
