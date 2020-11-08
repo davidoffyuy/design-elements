@@ -3,7 +3,7 @@ const loadShadow = () => {
   const shadow_text = document.getElementById("shadow_text");
   const scroll_val = document.getElementById("scroll_val");
   
-  shadow_text.innerHTML = lorem_main.innerHTML.slice(0, 100);
+  shadow_text.innerHTML = lorem_main.innerHTML.slice(0, 1000);
   
   window.addEventListener("scroll", function() {
     // generate scroll percentage
