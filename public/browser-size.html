@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap Dependencies -->
+    <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap/bootstrap.min.css" />
+
+    <!-- Handlebars Dependencies -->
+    <script src="js/handlebars/handlebars.runtime-v4.3.1.js"></script>
+    <script src="js/templates/templates.js"></script>
+
+    <!-- includes for browser-size -->
+    <script src="js/browser-size.js"></script>
+    <link rel="stylesheet" href="stylesheets/compiled/browser-size.css" />
+
+    <title>Image Slider Examples - Basic</title>
+  </head>
+  <body>
+    <header id='main_header'>
+      <!-- insert header template -->
+    </header>
+
+    <main>
+      <div style="width:800px;height:2000px">
+      </div>
+    </main>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        loadTemplates();
+      });
+
+      const loadTemplates = () => {
+        const navTopTemplate = Handlebars.templates.navigation_top;
+        document.getElementById('main_header').innerHTML = navTopTemplate({
+          navBrowserSize: true,
+        });
+      };
+    </script>
+  </body>
+</html>

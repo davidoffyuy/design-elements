@@ -4,3 +4,4 @@ npx handlebars -m templates/ -f public/js/templates/templates.js
 COMPILE & WATCH SCSS
 sass --no-source-map --watch scss/fading-slider-class.scss public/stylesheets/compiled/fading-slider-class.css
 sass --no-source-map --watch scss/scroll-shadow.scss public/stylesheets/compiled/scroll-shadow.css
+sass --no-source-map --watch scss/browser-size.scss public/stylesheets/compiled/browser-size.css
