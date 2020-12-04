@@ -21,12 +21,31 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: 80vh;
   background-color: blue;
+  transform: translateY(5vh);
 }
 
 #scroll_container {
   height: 250vh;
   width: 50vw;
+}
+
+@media (max-width: 1080px) {
+  #text_area {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 720px) {
+  #text_area {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #text_area {
+    width: 90vw;
+  }
 }
