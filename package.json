@@ -6,9 +6,10 @@
   "scripts": {
     "build": "npm run hbs && npm run scss",
     "hbs": "handlebars -m templates/ -f public/js/templates/templates.js",
-    "scss": "npm run scss:fading-slider-class && npm run scss:scroll-shadow",
+    "scss": "npm run scss:fading-slider-class && npm run scss:scroll-shadow && npm run scss:browser-size",
     "scss:fading-slider-class": "sass --no-source-map scss/fading-slider-class.scss public/stylesheets/compiled/fading-slider-class.css",
-    "scss:scroll-shadow": "sass --no-source-map scss/scroll-shadow.scss public/stylesheets/compiled/scroll-shadow.css"
+    "scss:scroll-shadow": "sass --no-source-map scss/scroll-shadow.scss public/stylesheets/compiled/scroll-shadow.css",
+    "scss:browser-size": "sass --no-source-map scss/browser-size.scss public/stylesheets/compiled/browser-size.css"
   },
   "repository": {
     "type": "git",
