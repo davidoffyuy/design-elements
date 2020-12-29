@@ -28,7 +28,10 @@
     <main>
       <div id="text_container">
         <div id="text_area">
-          text goes here
+          <div id="rowClientWidth">
+            <span>document.documentElement.clientWidth</span>
+            <span></span>
+          </div>
         </div>
       </div>
       <div id="scroll_container"></div>
@@ -37,6 +40,7 @@
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
         loadTemplates();
+        initSizeValues();
       });
 
       const loadTemplates = () => {
