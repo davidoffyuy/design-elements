@@ -26,9 +26,9 @@
     </header>
 
     <main>
-      <div id="text_container">
-        <div id="text_area">
-          <!-- Client Width/Height -->
+      <div id="output_container">
+        <div id="output_area">
+          <!--Client Width/Height-->
           <div id="rowClientWidth">
             <span>document.documentElement.clientWidth</span>
             <span></span>
@@ -46,7 +46,7 @@
             <span>document.body.clientHeight</span>
             <span></span>
           </div>             
-          <!-- Inner Width/Height-->
+          <!--Inner Width/Height-->
           <div id="rowInnerWidth">
             <span>window.innerWidth</span>
             <span></span>
@@ -54,9 +54,33 @@
           <div id="rowInnerHeight">
             <span>window.innerHeight</span>
             <span></span>
-          </div>       
+          </div>
+          
+          <!--100vw/vh-->
+          <div>100vw/vh</div>
+          <div id="row100VWClientWidth">
+            <span>clientWidth</span>
+            <span></span>
+          </div>
+          <div id="row100VHClientHeight">
+            <span>clientHeight</span>
+            <span></span>
+          </div>
+          <div id="row100VWOffsetWidth">
+            <span>offsetWidth</span>
+            <span></span>
+          </div>
+          <div id="row100VHOffsetHeight">
+            <span>offsetHeight</span>
+            <span></span>
+          </div>
         </div>
       </div>
+
+      <!--viewport_test will test width/height of 100vw/vh-->
+      <div id="viewport_test"></div>
+
+      <!--this blank div allows page to scroll-->
       <div id="scroll_container"></div>
     </main>
 
