@@ -12,3 +12,17 @@ function updateSizeValues() {
     document.querySelector("#row100VWOffsetWidth > span:nth-child(2)").innerHTML = viewport_test.offsetWidth;
     document.querySelector("#row100VHOffsetHeight > span:nth-child(2)").innerHTML = viewport_test.offsetHeight;
 }
+
+function showFullViewport() {
+    const viewport_test = document.querySelector("#viewport_test");
+    const displayVal = getComputedStyle(viewport_test).display;
+    const viewportButton = document.querySelector("#showFullViewport_Button");
+    if (displayVal == "block") {
+        viewport_test.style.display = "none";
+        viewportButton.innerHTML = "Show Full Viewport"
+    }
+    else {
+        viewport_test.style.display = "block";
+        viewportButton.innerHTML = "Hide Full Viewport"
+    }
+}
