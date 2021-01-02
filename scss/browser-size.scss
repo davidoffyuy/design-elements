@@ -5,14 +5,23 @@
   user-select: $property; 
 }
 
+// * {
+//   margin: 0;
+//   padding: 0;
+//   }
+
+// body {
+//   margin: 0; /* interferes with 100vw */
+// }
+
 #output_container {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  border: solid 1px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 #output_area {
@@ -26,6 +35,7 @@
   height: 80vh;
   background-color: rgb(145, 145, 255);
   transform: translateY(5vh);
+  pointer-events: auto;
 }
 
 #viewport_test {

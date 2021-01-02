@@ -17,6 +17,7 @@
     <!-- includes for browser-size -->
     <script src="js/browser-size.js"></script>
     <link rel="stylesheet" href="stylesheets/compiled/browser-size.css" />
+    <script src="js/tools/debounce.js"></script>
 
     <title>Image Slider Examples - Basic</title>
   </head>
@@ -75,10 +76,10 @@
             <span></span>
           </div>
         </div>
-      </div>
 
-      <!--viewport_test will test width/height of 100vw/vh-->
-      <div id="viewport_test"></div>
+        <!--viewport_test will test width/height of 100vw/vh-->
+        <div id="viewport_test"></div>
+      </div>
 
       <!--this blank div allows page to scroll-->
       <div id="scroll_container"></div>
@@ -87,7 +88,11 @@
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
         loadTemplates();
-        initSizeValues();
+        updateSizeValues();
+        document.addEventListener('scroll', debounce(() => {
+          updateSizeValues();
+          console.log("updated sizing values");
+        }, 300));
       });
 
       const loadTemplates = () => {

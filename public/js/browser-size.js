@@ -1,4 +1,4 @@
-function initSizeValues() {
+function updateSizeValues() {
     document.querySelector("#rowClientWidth > span:nth-child(2)").innerHTML = document.documentElement.clientWidth;
     document.querySelector("#rowClientHeight > span:nth-child(2)").innerHTML = document.documentElement.clientHeight;
     document.querySelector("#rowBodyClientWidth > span:nth-child(2)").innerHTML = document.body.clientWidth;
