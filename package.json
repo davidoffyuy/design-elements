@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/davidoffyuy/design-elements#readme",
   "dependencies": {
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "sass": "^1.26.10"
   }
 }
